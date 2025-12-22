@@ -1,3 +1,5 @@
+  console.log("hellow")
+
 const inputText  = document.getElementById('inputText');
 
 inputText.addEventListener('input',(event)=>{

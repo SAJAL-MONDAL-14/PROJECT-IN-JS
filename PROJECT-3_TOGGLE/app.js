@@ -1,3 +1,5 @@
+  console.log("hellow")
+
 const toggle = document.getElementById('toggle');
 const toggleLabel = document.querySelector('.toggle-label');
 const label = document.querySelector('label');

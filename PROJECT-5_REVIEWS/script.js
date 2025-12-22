@@ -1,3 +1,5 @@
+  console.log("hellow")
+
 const reviews = [
   {
     id: 1,

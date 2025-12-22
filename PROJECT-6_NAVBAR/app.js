@@ -1,3 +1,5 @@
+      console.log("hellow")
+    
     const toggleBtn = document.querySelector('.toggle-btn');
     const Home = document.createElement('a');
     const About = document.createElement('a');
@@ -56,3 +58,5 @@
     fun(About);
     fun(Project);
     fun(Contact);
+
+  
