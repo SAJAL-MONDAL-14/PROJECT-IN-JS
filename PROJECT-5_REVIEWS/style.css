@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #102a42;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: #49a6e9;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
+
+.review {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.review:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+}
+
+#person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #49a6e9;
+}
+
+.img-container::before {
+  content: '“';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #49a6e9;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 6px;
+  border-radius: 50%;
+  transform: translate(-15%, -15%);
+}
+
+#author {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #102a42;
+  text-transform: capitalize;
+}
+
+#job {
+  color: #49a6e9;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#info {
+  color: #617d98;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #49a6e9;
+  transition: all 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #063251;
+}
+
+.random-btn {
+  background: #ebf7ff;
+  border: 1px solid #49a6e9;
+  color: #49a6e9;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.random-btn:hover {
+  background: #49a6e9;
+  color: #fff;
+}

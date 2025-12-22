@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Word Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <section class="card" aria-labelledby="wc-title">
+      <header class="header">
+        <div>
+          <h1 id="wc-title" class="title">Word Counter</h1>
+          <p class="subtitle">Paste text to see words, characters and spaces (JS will update counts).</p>
+        </div>
+
+        <div class="controls" aria-hidden="true">
+          <button class="btn secondary">Clear</button>
+          <button class="btn">Copy</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="editor">
+          <label for="inputText" class="hint">Enter or paste text below:</label>
+          <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+          <div class="footer-note">Tip: use <strong>split()</strong>, <strong>trim()</strong> and regex to compute counts in JS.</div>
+        </div>
+
+        <aside class="sidebar" aria-label="Statistics">
+          <div class="stat">
+            <div class="label">Words</div>
+            <div id="wordsCount" class="value">0</div>
+          </div>
+
+          <div class="stat">
+            <div class="label">Characters</div>
+            <div id="charsCount" class="value">0</div>
+          </div>
+
+          <div class="stat">
+            <div class="label">Spaces</div>
+            <div id="spacesCount" class="value">0</div>
+          </div>
+        </aside>
+      </main>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
